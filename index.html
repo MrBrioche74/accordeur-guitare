@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accordeur guitare (standard)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Accordeur guitare</h1>
+    <p class="sub">Accordage standard : E2 A2 D3 G3 B3 E4</p>
+
+    <div class="row">
+      <button id="btnToggle">Démarrer</button>
+      <span id="status" class="pill">⏹️ arrêté</span>
+    </div>
+
+    <section class="readout">
+      <div class="big" id="note">—</div>
+      <div class="small">
+        <span id="freq">0.00 Hz</span>
+        <span>•</span>
+        <span id="string">—</span>
+      </div>
+      <div class="cents" id="cents">0.0 cents</div>
+
+      <div class="meter">
+        <div class="tick"></div>
+        <div class="needle" id="needle"></div>
+        <div class="ok" id="ok">OK</div>
+      </div>
+
+      <p class="hint" id="hint">Appuie sur “Démarrer”, accepte le micro, puis joue une corde.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
